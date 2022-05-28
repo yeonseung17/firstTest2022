@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 멀티미디어</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+<h2>멀티 미디어 파일 표현하기</h2>
+<h3>비디오 태그를 활용한 영상 가져오기</h3>
+<p>웹브라우저에서 인식 가능한 영상 파일 타입 : mp4, obv, webm</p>
+<div class="video_frame">
+    <video class= "video_box" autoplay loop muted playsinline>
+     <source type="video/mp4" src="./contents/Beosound_A1_2nd_Gen.mp4">
+     <source type="video">
+     <source type="">
+    Your brower is not supported
+    </video>
+</div>
+<h4>비디오 태그를 구성하는 주요 속성들</h4>
+<p>1. source 태그를 활용하여 여러가지 형식의 영상을 작성한다.</p>
+<p>2. 브라우저가 열리면서 자동 재생이 되기 위해서는 video 태그 내부에 autoplay 속성을 작성한다. (단, iOS에서는 자동 재생을 위해서 playsinline 이라는 속성도 함께 작성되어야 함)</p>
+<p>3. loop : 반복재생 / muted : 음소거 활성화 / controls : 재생과 일시정지 기능을 활성화 시킴</p>
+
+<h3>유튜브 영상 가져오기</h3>
+
+<div id="video_cover">
+    <iframe class="youtube_frame" src="https://www.youtube.com/embed/s2KFCmJ3XOM?rel=0&autoplay=1&loop=1;playlist=s2KFCmJ3XOM&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="dark"></div>
+</div>
+
+<h3>음성파일 가져오기</h3>
+<audio autoplay loop playsinline controls>
+    <source type="audio/mp3" src="./contents/aud_03.mp3">
+</audio>
+
+
+
+
+
+
+
+</body>
+</html>
